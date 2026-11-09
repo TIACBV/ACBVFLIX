@@ -89,16 +89,23 @@ const FILMES = {
     { titulo: "EUDOPSE", id: "_0afWVPbcY8", sinopse: "Sinopse do curta." }
   ],
   2025: [
-    { titulo: "Título do curta 1", id: "", sinopse: "Sinopse do curta." },
-    { titulo: "Título do curta 2", id: "", sinopse: "Sinopse do curta." }
+    { titulo: "O som do Silêncio", id: "-9vFqsTeBgg", sinopse: "Sinopse do curta." },
+    { titulo: "Sedento por tua presença", id: "P6v4gsaCYYE", sinopse: "Sinopse do curta." },
+    { titulo: "Entre dois nomes", id: "xEjogI0Z1qA", sinopse: "Sinopse do curta." },
+    { titulo: "Assinado, Fabrício ", id: "sYe2H4UfRLA", sinopse: "Sinopse do curta." },
+    { titulo: "Um ato de coragem ", id: "Py5mXFIPPf4", sinopse: "Sinopse do curta." }
   ],
   2024: [
-    { titulo: "Título do curta 1", id: "", sinopse: "Sinopse do curta." },
-    { titulo: "Título do curta 2", id: "", sinopse: "Sinopse do curta." }
+    { titulo: "Broken", id: "ABbO6x0IAYU", sinopse: "Sinopse do curta." },
+    { titulo: "Redenção", id: "d2A_DJ1wdzY", sinopse: "Sinopse do curta." },
+    { titulo: "The Other Side", id: "AEu89Tdn3jw", sinopse: "Sinopse do curta." },
+    { titulo: "Destinos Cruzados", id: "afK3U9L4FFw", sinopse: "Sinopse do curta." }
   ],
   2023: [
-    { titulo: "Título do curta 1", id: "", sinopse: "Sinopse do curta." },
-    { titulo: "Título do curta 2", id: "", sinopse: "Sinopse do curta." }
+    { titulo: "IDE", id: "9C9kElWpDUA", sinopse: "Sinopse do curta." },
+    { titulo: "Amparado pelo Amor", id: "Qqf0fUX2Ktk", sinopse: "Sinopse do curta." },
+    { titulo: "Além da Luta", id: "_Qw8h12s4Co", sinopse: "Sinopse do curta." },
+    { titulo: "Extraordinário", id: "tvQb61arYOQ", sinopse: "Sinopse do curta." }
   ],
   2019: [
     { titulo: "Título do curta 1", id: "", sinopse: "Sinopse do curta." },
@@ -135,7 +142,7 @@ function card(f, ano) {
 anos.forEach(ano => {
   const r = document.createElement("section");
   r.className = "row"; r.id = "ano" + ano;
-  r.innerHTML = `<h2>Curtas de ${ano}</h2><div class="rail"></div>`;
+  r.innerHTML = `<h2>Filmes de ${ano}</h2><div class="rail"></div>`;
   FILMES[ano].forEach(f => r.querySelector(".rail").append(card(f, ano)));
   $("#rows").append(r);
   const n = document.createElement("button");
